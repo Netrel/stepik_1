@@ -34,13 +34,13 @@ while count < n**2:
                                 topRightBorder)
             valueToCreateTheLastColumn += 1
 
-            # * Reverses rows
+            # * Reverses columns
             for j in range(bottomLeftBorder, n//2):
                 temp = matrix[i][j]
                 matrix[i][j] = matrix[i][-(j+2)]
                 matrix[i][-(j+2)] = temp
 
-        # * Reverses columns
+        # * Reverses rows
         for i in range(topRightBorder, (n+1)//2):
             for j in range(bottomLeftBorder, n-topRightBorder):
                 temp = matrix[i][j]
